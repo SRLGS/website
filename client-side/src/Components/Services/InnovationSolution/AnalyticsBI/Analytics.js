@@ -1,3 +1,4 @@
+// code for new year
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import "./Analytics.css";
@@ -389,7 +390,7 @@ export default function Analytics() {
             </div>
             <div className="col-12 text-center">
               <p style={{ fontSize: "18px" }}>
-                Abacus Cambridge Partners can help you master the art of
+                Omnifinity can help you master the art of
                 utilizing real-time data streams. Solve business-critical
                 challenges, enhance the customer experience, and meet your
                 organizational goals. With 35+ years of industry expertise and
