@@ -10,6 +10,7 @@ import sapnahana4 from "../../../../images/Enterprise/SapHana/saphana4.png";
 import sapnahana5 from "../../../../images/Enterprise/SapHana/saphana5.png";
 import sapnahana6 from "../../../../images/Enterprise/SapHana/saphana6.png";
 import sapnahana7 from "../../../../images/Enterprise/SapHana/saphana7.png";
+import { useNavigate } from "react-router-dom";
 const data = [
   {
     id: 1,
@@ -70,6 +71,7 @@ const data = [
 ];
 
 const SapHana = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="saphana-first-container">
@@ -180,18 +182,25 @@ const SapHana = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner />
+      <WhyUsBanner
+        title={"Why Omnifinity for your SAP S/4HANA Implementation"}
+      />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          Abacus Cambridge Partners is not a new name to SAP suite of solutions.
-          Our skilled team can map out a strategy on SAP S/4HANA that not only
+          Omnifinity Partners is not a new name to SAP suite of solutions. Our
+          skilled team can map out a strategy on SAP S/4HANA that not only
           focuses on your current goals but also takes into account the future
           requirements of your business. We have also successfully executed
           projects for on-premise, private cloud and hybrid environments.
           Contact us to get a demo of SAP S/4HANA.
         </p>
 
-        <button className="omnifinity-button">Contact Us</button>
+        <button
+          className="omnifinity-button"
+          onClick={() => navigate("/contactUs")}
+        >
+          Contact Us
+        </button>
       </div>
     </>
   );

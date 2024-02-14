@@ -55,19 +55,34 @@ const Navbar = () => {
                   <li>
                     Enterprise Systems
                     <ul className="enter-prise-menu">
-                      <Link to="/sap-hana" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-hana"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP S/4 HANA</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-business-by-design"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Business ByDesign</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-business-one"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Business One</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-customer-checkout"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Customer Checkout</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-ariba"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Ariba</li>
                       </Link>
                     </ul>
@@ -78,7 +93,7 @@ const Navbar = () => {
                   <li>
                     Innovation Solutions
                     <ul className="innovation-menu">
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link to="/AnalyticsBI" className="sub-menu-list-item">
                         <li>Analytics & BI</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
@@ -91,24 +106,44 @@ const Navbar = () => {
                         <li>Digital Financial Services</li>
                       </Link>
                     </ul>
-                    <FaCaretRight />
+                    <FaCaretRight className="right-icon" />
                   </li>
                 </Link>
+
                 <Link to="/managed-services" className="sub-menu-list-item">
                   <li>
                     Managed Services
                     <ul className="managed-menu">
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/managed-services/manage-cloud"
+                        className="sub-menu-list-item"
+                      >
                         <li>Managed Cloud</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/managed-services/devops"
+                        className="sub-menu-list-item"
+                      >
                         <li>DevOps</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/managed-services/staff-augmentation"
+                        className="sub-menu-list-item"
+                      >
                         <li>Staff Augmentation</li>
                       </Link>
                     </ul>
                     <FaCaretRight />
+                  </li>
+                </Link>
+                <Link to="/mendixPage" className="sub-menu-list-item">
+                  <li>
+                    Mendix <FaCaretRight />
+                  </li>
+                </Link>
+                <Link to="/polarionPage" className="sub-menu-list-item">
+                  <li>
+                    Polarion <FaCaretRight />
                   </li>
                 </Link>
               </ul>

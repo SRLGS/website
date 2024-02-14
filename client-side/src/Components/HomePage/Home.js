@@ -5,7 +5,7 @@ import Player from "../Videos/pexels-tima-miroshnichenko-5377697 (2160p).mp4";
 import { IoHome } from "react-icons/io5";
 import { IoPower } from "react-icons/io5";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { BsFillPeopleFill } from "react-icons/bs";
+import { BsBrightnessAltHigh, BsFillPeopleFill } from "react-icons/bs";
 import image1 from "../Images/image (1).png";
 import image2 from "../Images/image (2).png";
 import image3 from "../Images/image (3).png";
@@ -52,6 +52,33 @@ export default function HomePage() {
   const images = [image1, image2, image3, image];
 
   const [HomeImages, setCards] = useState([]);
+
+  const Banners=[
+    {
+      projectId:1,
+      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hu…).png?width=2100&name=Untitled%20design%20(5).png",
+      title:"Operate",
+      description:"Master Your Operations with Expert Managed Services"
+    },
+    {
+      projectId:2,
+      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hu…tal%20core.png?width=2100&name=digital%20core.png",
+      title:"BUILD YOUR DIGITAL CORE",
+      description:"Empower Your Enterprise with Unrivalled Systems"
+    },
+    {
+      projectId:3,
+      imageUrl:"	https://27058982.fs1.hubspotusercontent-eu1.net/hu…Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
+      title:"Embrace the AI Transformation",
+      description:"Unleashing New Business Horizons"
+    },
+    {
+      projectId:4,
+      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
+      title:"Innovate",
+      description:"Harness Cutting-Edge Frameworks for Business Innovation"
+    },
+  ]
 
   const getBannerImages = async () => {
     try {
@@ -138,16 +165,32 @@ export default function HomePage() {
           <div className="col-12">
             <Carousel>
               {HomeImages.map((each, index) => (
-                <Carousel.Item key={each.banner._id}>
+                <Carousel.Item>
                   <img
-                    style={{ height: "500px", maxWidth: "100%" }}
-                    className="d-block w-100"
+                    style={{ height: "750px", maxWidth: "100%" }}
+                    className="d-block w-100 carouselBanner"
                     src={`http://localhost:4000/uploads/banners/${each.banner.image}`}
                     alt={each.banner.title}
                   />
                   <div className="homepage-carousel-caption-overlay">
-                    <h3>{each.banner.title}</h3>
-                    <p>{each.banner.description}</p>
+                    <h1
+                      style={{
+                        color: "#ffffff",
+                        fontWeight: "bolder",
+                        fontSize: "65px",
+                      }}
+                    >
+                      {each.banner.title}
+                    </h1>
+                    <p
+                      style={{
+                        color: "#ffffff",
+                        fontSize: "25px",
+                        fontWeight: "400",
+                      }}
+                    >
+                      {each.banner.description}
+                    </p>
                   </div>
                 </Carousel.Item>
               ))}
@@ -254,15 +297,14 @@ export default function HomePage() {
           <div className="col-12">
             <p>
               Partnership and collaboration with global technology leaders are
-              at the core of Abacus Cambridge Partners' philosophy. By bringing
-              together specialists and leaders, our goal is to generate
-              significant value from digital transformation projects our
-              customers invest in. Our Partners are numerous, and we remain open
-              to new ideas and opportunities for collaboration. As a couple of
-              examples of highly successful Abacus partnerships, we have been
-              partners with SAP and Google and have been continually
-              acknowledged by both companies as leaders to achieve great results
-              for our clients.
+              at the core of Omnifinity philosophy. By bringing together
+              specialists and leaders, our goal is to generate significant value
+              from digital transformation projects our customers invest in. Our
+              Partners are numerous, and we remain open to new ideas and
+              opportunities for collaboration. As a couple of examples of highly
+              successful Omnifinity partnerships, we have been partners with SAP
+              and Google and have been continually acknowledged by both
+              companies as leaders to achieve great results for our clients.
             </p>
           </div>
           <div
@@ -279,8 +321,8 @@ export default function HomePage() {
                   <img
                     src={image}
                     alt={`${index + 1}`}
-                    height="150"
-                    width="150"
+                
+                    width="200"
                   />
                 </div>
               ))}
@@ -349,7 +391,7 @@ export default function HomePage() {
             <h1 className="text-center mb-3 mt-2">Featured Solutions</h1>
           </div>
           {HomeCards.map((each) => (
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4  mb-3">
               <div className="HomecardsContainer text-center  shadow HomeContentContainer mb-2 p-2">
                 <img
                   src={each.imageUrl}
