@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import "./Analytics.css";
@@ -93,16 +92,13 @@ export default function Analytics() {
 
               <div className="content-container">
                 <Fade direction="up">
-                  <h6 className="pl-5 ml-5 mb-3 AnalyticsSubHeadings" >
+                  <h6 className="p-2  mb-3 AnalyticsSubHeadings">
                     Innovation Solutions
                   </h6>
-                  <h1
-                    className="pl-5  ml-5  mb-3 AnalyticsHeading"
-                   
-                  >
+                  <h1 className="p-2   mb-3 AnalyticsHeading">
                     Advanced Analytics & <br /> Business Intelligence
                   </h1>
-                  <p className="pl-5 ml-5 mb-3 AnalyticsParagraph">
+                  <p className="p-2 mb-3 AnalyticsParagraph">
                     Actionable Insights, Transformative Results
                   </p>
                 </Fade>
@@ -128,7 +124,7 @@ export default function Analytics() {
                   style={{
                     marginBottom: "0px",
                     color: "#ffffff",
-    
+
                     fontWeight: "bold",
                     background: "#4353ff",
                   }}
@@ -136,7 +132,10 @@ export default function Analytics() {
                   Enquire Now
                 </h1>
                 <form className="form-control p-3">
-                    <p classname="mb-2 mt-2 text-center p-2">Please fill in your information and we'll get in touch with you.</p>
+                  <p classname="mb-2 mt-2 text-center p-2">
+                    Please fill in your information and we'll get in touch with
+                    you.
+                  </p>
                   <label htmlFor="firstName">
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
@@ -207,7 +206,6 @@ export default function Analytics() {
                   <textarea
                     required
                     rows="5"
-               
                     id="message"
                     className="mb-3 w-100"
                   ></textarea>
@@ -216,7 +214,7 @@ export default function Analytics() {
                     style={{
                       height: "45px",
                       width: "100px",
-                      border:"none",
+                      border: "none",
                       background: "#0f4494",
                       cursor: "pointer",
                       display: "flex",
@@ -383,7 +381,14 @@ export default function Analytics() {
               <h4 className="mt-3 mb-3 p-2">{Filtered[0].title4}</h4>
               <p className="mt-3 mb-3 p-2">{Filtered[0].description4}</p>
             </div>
-            <div className="col-12 col-md-6 mt-3 text-center mb-3" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <div
+              className="col-12 col-md-6 mt-3 text-center mb-3"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Filtered[0].imageUrl} width="600" height="447" alt="" />
             </div>
             <div className="col-12">
@@ -391,12 +396,12 @@ export default function Analytics() {
             </div>
             <div className="col-12 text-center">
               <p style={{ fontSize: "18px" }}>
-                Omnifinity can help you master the art of
-                utilizing real-time data streams. Solve business-critical
-                challenges, enhance the customer experience, and meet your
-                organizational goals. With 35+ years of industry expertise and
-                dedicated GCP-certified specialists, we promise impactful,
-                scalable, and quantifiable results.
+                Omnifinity can help you master the art of utilizing real-time
+                data streams. Solve business-critical challenges, enhance the
+                customer experience, and meet your organizational goals. With
+                35+ years of industry expertise and dedicated GCP-certified
+                specialists, we promise impactful, scalable, and quantifiable
+                results.
               </p>
               <div className="text-center d-flex justify-content-center mt-3 w-100  mb-4">
                 <button

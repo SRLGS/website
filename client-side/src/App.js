@@ -12,7 +12,7 @@ import AdminLogin from "./AdminComponents/adminLogin";
 import AdminPannel from "./AdminComponents/adminPanel";
 import Contact from "./Components/ContactUs/Contact";
 import Footer from "./Components/Footer/Footer";
-import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js"
+import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js";
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
 import ApplicationDevelopment from "./Components/Services/InnovationSolution/ApplicationDevelopment/ApplicationDevelopment.js";
@@ -65,7 +65,7 @@ function App() {
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
         <Route path="/managed-services" element={<ManagedServices />} />
         <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
-       
+
         <Route
           path="/enterprise-systems/sap-business-by-design"
           element={<SapBusinessByDesign />}
@@ -78,6 +78,10 @@ function App() {
         <Route
           path="/enterprise-systems/sap-customer-checkout"
           element={<SapCustomer />}
+        />
+        <Route
+          path="/ApplicationDevelopment"
+          element={<ApplicationDevelopment />}
         />
 
         <Route
