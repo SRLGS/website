@@ -15,6 +15,7 @@ import Footer from "./Components/Footer/Footer";
 import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js"
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
+import ApplicationDevelopment from "./Components/Services/InnovationSolution/ApplicationDevelopment/ApplicationDevelopment.js";
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
 import ManagedServices from "./Components/Services/ManagedServices/ManagedServices";
 import SapHana from "./Components/Services/EnterpriseEdition/SapHana/SapHana";
@@ -64,6 +65,7 @@ function App() {
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
         <Route path="/managed-services" element={<ManagedServices />} />
         <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
+       
         <Route
           path="/enterprise-systems/sap-business-by-design"
           element={<SapBusinessByDesign />}
